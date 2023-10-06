@@ -24,7 +24,7 @@ const Right = () => {
       scrollDiv.removeEventListener('scroll', onScroll);
     };
   }, []);
-console.log(num)
+// console.log(num)
 
   return (
     <div className="right">
