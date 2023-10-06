@@ -1,0 +1,25 @@
+ 
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(15,23,42);
+    display: flex;
+    flex-direction: row;
+    /* cursor: none; */
+    overflow: hidden;
+}
+
+.main .leftBox{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+.main .rightBox{
+    position: relative;
+    width: 50%;
+    min-height: 100vh;
+    /* border: 1px solid white; */
+    overflow-y: scroll ;
+}

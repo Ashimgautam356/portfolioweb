@@ -1,0 +1,101 @@
+@media screen and (max-width:941px)
+    .main
+        // border: 1px solid red
+        display: flex
+        flex-direction: column
+        overflow: scroll
+        align-items: center
+        .leftBox
+            // border: 1px solid red
+            width: 90%
+            margin-bottom: 10vh
+            .left
+                position: relative
+                // height: 50vh
+                display: flex
+                flex-direction: colum
+                align-items: flex-start
+                // border: 1px solid white
+                .left-UpperSection
+                    // min-height: 10vh
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    .left-navLinks
+                        display: none
+                        position: relative
+                        // border: 1px solid red
+                .left_lowerSection
+                    height: 10vh
+                    // border: 1px solid red
+                    display: flex
+                    justify-content: flex-start
+        .rightBox
+            // border: 1px solid white
+            width: 80%
+            min-height: 200vh
+            overflow-y: auto
+            .right
+                .nav-for-mobile    
+                    background-color: rgba(15, 23, 42, 0.484)
+                    filter: blur(1)   
+                    height: 7vh
+                    width: 100%    
+                    top:0    
+                    position: fixed
+                    // border: 1px solid red
+                    z-index: 1
+                    display: flex
+                    align-items: center
+                    // boxshadow:
+
+@media  screen and (max-width:450px)
+    .main
+        .leftBox
+            // border: 1px solid red
+            .left
+                // border: 1px solid red
+                .left-UpperSection
+                    min-height: 25vh
+                    flex-direction: column
+                    align-items: flex-start
+                    width: 100%
+                    // border: 1px solid white
+                    .textContent
+                        width: 100%
+                        h1
+                            font-size: 10vw
+                .left_lowerSection
+                    height: 10vh
+        .rightBox
+            .right
+                // border: 1px solid red
+                .aboutme
+                    width: 100%
+                .project
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-evenly
+                    width: 100%
+                    .projectBox
+                        margin-bottom: 1rem
+                        // border:1px solid red
+                        a   
+                            // border: 1px solid white
+                            display: flex
+                            flex-direction: column
+                            .forImg
+                                width: 100%
+                                img
+                                    width: 60%
+                            .projectDetails
+                                width: 100%
+                            .techUsed
+                                width: 100%
+                                p
+                                    width: 20vw
+                                    font-size: 1rem
+
+
+
+

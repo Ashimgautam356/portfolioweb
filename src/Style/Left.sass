@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap')
+
+.left
+    position: relative
+    display: flex
+    width: 100%
+    height: 100%
+    // border: 1px solid yellowgreen
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+
+    .left-UpperSection
+        width: 90%
+        min-height: 50vh 
+        // border: 1px solid red
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-evenly   
+        
+        .textContent
+            width: 60%
+            // border: 1px solid white
+            h1
+                font-size: 3.25rem
+                line-height: 3rem
+                color: white    
+                font-weight: 700
+                font-family: 'Inter'
+                // border: 1px solid pink
+                margin-bottom: 0.5rem
+            h3
+                font-family: 'Inter'
+                color: white
+                font-size: 1.4rem
+                font-weight: 500
+                line-height: 1.8rem
+                margin-bottom: 1rem
+
+            p
+                font-family: 'Inter'
+                color: #94a3b8
+                font-size: 1rem
+                line-height: 1.2rem
+                font-weight: 400
+        .left-navLinks
+            min-height: 10vh
+            width: 60%
+            // border: 1px solid greenyellow
+            ul
+                li
+                    position: relative
+                    font-family: 'Inter'
+                    // border: 1px solid red
+                    // border-bottom: 1px solid white   
+                    width: 70%
+                    text-align: left
+                    // margin-bottom: 1rem
+                    padding:2% 0 2% 13%
+                    transition: all 1s ease
+                    cursor: pointer
+                    &::before
+                        content: ''
+                        width: 40px
+                        height: 1px
+                        position: absolute
+                        top: 50%
+                        left: 0
+                        text-align: center
+                        background-color: #94a3b8 
+                    &:hover
+                        padding:2% 0 2% 24%
+                        color: white
+                        transition: all 1s ease
+                        &::before
+                            transition: all 1s ease
+                            width: 80px
+                        a
+                            color: white    
+                        
+        
+                    a   
+                        position: relative
+                        // border: 1px solid white
+                        font-weight: 700
+                        color: #94a3b8  
+                    .active
+                        position: relative
+                        // border: 1px solid white
+                        font-weight: 700
+                        color: white
+                .li-active
+                    padding:2% 0 2% 24%
+                    color: white
+                    transition: all 1s ease
+                    &::before
+                        transition: all 1s ease
+                        background-color: white
+                        width: 80px
+
+    .left_lowerSection
+        // border: 1px solid white
+        width: 90%
+        height: 20vh
+        display: flex
+        flex-direction: row
+        justify-content: center
+        .iconLink
+            // border: 1px solid red
+            padding: 5%
+            font-size: 1.5rem
+            color: #94A3B8
+            a
+                color: #94A3B8
+                cursor: pointer
+            
+
+
