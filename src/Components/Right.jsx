@@ -36,22 +36,13 @@ console.log(num)
       }
       <section className="aboutme" >
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
-          omnis, debitis aliquid at quis unde odio obcaecati nesciunt
-          exercitationem quod veritatis maiores accusantium nemo deleniti labore
-          dolor ex molestias sunt.
+        Greetings! I'm Ashim Gautam, a 20-year-old from Kapilvastu, currently pursuing a BCA degree at Crimson College in Butwal, Nepal. I'm deeply passionate about technology, constantly immersing myself in the latest trends and developments. When I'm not engrossed in code or exploring new software, you'll find me on the cricket field, honing both my technical and athletic skills.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio unde
-          praesentium explicabo minima asperiores libero exercitationem id sit,
-          doloribus totam voluptates. Ad autem qui velit soluta eligendi
-          accusantium corrupti?
+        Technology isn't just a career path for me; it's a way of life. From programming languages to cutting-edge software, I'm always eager to learn and apply my knowledge to real-world projects. This website serves as a platform to share my experiences, insights, and the exciting projects I'm working on.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam
-          aperiam iusto pariatur ullam possimus dolorem facilis animi beatae
-          natus soluta sapiente rerum, officia doloribus dolorum, neque cumque
-          veritatis rem.
+        Beyond the digital realm, cricket is my sanctuary. It's more than just a sport—it's a testament to teamwork, strategy, and the thrill of competition. Whether I'm debugging code or perfecting my cricket technique, I approach each challenge with the same level of dedication and fervor.
         </p>
       </section>
 
