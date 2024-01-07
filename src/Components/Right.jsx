@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../Style/Right.sass";
-import store from "../img/store.png";
-import weather from "../img/weather.png";
-import todolist from "../img/todolist.png";
 import { TfiArrowTopRight } from "react-icons/tfi";
 // import '../Style/Responsive.sass'
+
+import {myProjects} from '../content/content'
+
 
 const Right = () => {
   const [num ,setNum] = React.useState(0);
@@ -49,95 +49,43 @@ const Right = () => {
       {/* <h3>Project</h3> */}
       {/* project */}
       <section className="project" id="project">
-        <div className="projectBox">
-          <a href="https://incomparable-belekoy-f6ffd1.netlify.app/#/">
+        {
+          myProjects.map(project=>{
+            return(
+            <div className="projectBox">
+          <a href={`${project.liveLink}`}>
             <div className="forImg">
-              <img src={store} alt="" />
+              <img src={`../images/${project.img}`} alt="" />
             </div>
             <div className="projectDetails">
               <div className="projectHeading">
-                <h1>Store E-Commerce Website</h1>
+                <h1>{project.heading}</h1>
                 <p className="ic">
                   <TfiArrowTopRight></TfiArrowTopRight>
                 </p>
               </div>
               <div className="details">
                 <p>
-                  It is a frontend project. Where I'have created login page
-                  interface, landing page and have done routing with react
-                  router dom for seam less navigation. This project includes's
-                  all the required functionality for the e-commerce website.
-                  <a href="https://github.com/Ashimgautam356/Store">Code</a>
+                  {project.details}
+                  <a href={`${project.githubLink}`}>Code</a>
                 </p>
               </div>
               <div className="techUsed">
-                <p>React</p>
-                <p>Sass</p>
-                <p>Netlify</p>
+                {
+                  project.techused.map(tech=>{
+                    return(
+                      <p>{tech}</p>
+                      
+                    )
+                  })
+                }
               </div>
             </div>
           </a>
         </div>
-        <div className="projectBox">
-          <a href="https://weather-web-app-two.vercel.app/">
-            <div className="forImg">
-              <img src={weather} alt="" />
-            </div>
-            <div className="projectDetails">
-              <div className="projectHeading">
-                <h1>Live Weather</h1>
-                <p className="ic">
-                  <TfiArrowTopRight></TfiArrowTopRight>
-                </p>
-              </div>
-              <div className="details">
-                <p>
-                  It is a frontend project. Where I'have created login page
-                  interface, landing page and have done routing with react
-                  router dom for seam less navigation. This project includes's
-                  all the required functionality for the e-commerce website.
-                  <a href="https://github.com/Ashimgautam356/weather-web-app">
-                    Code
-                  </a>
-                </p>
-              </div>
-              <div className="techUsed">
-                <p>React</p>
-                <p>Sass</p>
-                <p>Vercel</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div className="projectBox">
-          <a href="https://todolist-roan-kappa.vercel.app/">
-            <div className="forImg">
-              <img src={todolist} alt="" />
-            </div>
-            <div className="projectDetails">
-              <div className="projectHeading">
-                <h1>Todo List</h1>
-                <p className="ic">
-                  <TfiArrowTopRight></TfiArrowTopRight>
-                </p>
-              </div>
-              <div className="details">
-                <p>
-                  It is a frontend project. Where I'have created login page
-                  interface, landing page and have done routing with react
-                  router dom for seam less navigation. This project includes's
-                  all the required functionality for the e-commerce website.
-                </p>
-              </div>
-              <div className="techUsed">
-                <p>React</p>
-                <p>Sass</p>
-                <p>Vercel</p>
-              </div>
-            </div>
-          </a>
-        </div>
+            )
+          })
+        }
       </section>
     </div>
   );
