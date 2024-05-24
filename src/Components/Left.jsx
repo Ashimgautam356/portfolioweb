@@ -30,7 +30,7 @@ const Left = () => {
             <div className="textContent">
                 <h1>Ashim Gautam</h1>
                 <h3>Frontend Developer</h3>
-                <p>I build accessible, inclusive products and digital experiences for the web. <a href="https://sg.docworkspace.com/d/sIOTR85zvAZHV6KwG"> My Resume</a></p>
+                <p>I build accessible, inclusive products and digital experiences for the web. <a href="https://sg.docworkspace.com/d/sICjR85zvAd_XwLIG"> My Resume</a></p>
             </div>
 
             <div className='my-stacks'>
