@@ -75,7 +75,6 @@ const Right = () => {
                   project.techused.map(tech=>{
                     return(
                       <p>{tech}</p>
-                      
                     )
                   })
                 }
